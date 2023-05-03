@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome ############ -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap icon ################### -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <!-- bootstrap css #################### -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--  main css #################### -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("of6YZW01UIo8DpBg7");
+         })();
+    </script>
+    <title>CV</title>
+</head>
+<body>
+    <main class="container-fluid p-0">
+        <div class="scroller" id="scroller"></div>
+        <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- start about ################################## -->
+        <section class="page page-one">
+            <div class="container">
+                <aside>
+                    <ul onclick="myFunction(event)">
+                        <li class="btn" id="btn1"><a href="index.html">About</a></li>
+                        <li class="btn" id="btn2"><a href="resume.html">Resume</a></li>
+                        <li class="btn" id="btn3"><a href="work.html">Work</a></li>
+                        <li class="btn" id="btn4"><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </aside>
+                <!-- start contact ########################################### -->
+                <div class="contact" id="contact">
+                    <div class="box">
+                        <img src="images/work6.jpg" alt="">
+                        <div class="info">
+                            <h2>Ebrahem fikry</h2>
+                            <p>I am available for freelance work. Connect with me via and call in to my account. </p>
+                            <p>Phone :<span> 01158922859</span></p>
+                            <p>Email :<span> ebrahemfikry9@gmail.com</span></p>
+                            <h3>Find With Me:</h3>
+                            <div class="link">
+                                <a href="https://www.facebook.com/fikri.ebrahem/"><i class="bi bi-facebook"></i></a>
+                                <a href="https://api.whatsapp.com/send/?phone=201091356480&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+                                <a href="https://www.linkedin.com/in/ebrahem-fikry/"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box two">
+                        <form>
+                            <div class="name">
+                                <fieldset>
+                                    <input type="text" id="name" name="userName" placeholder="Your Name" >
+                                </fieldset>
+                                <fieldset>
+                                    <input type="tel" id="phone" name="userPhone" placeholder="Phone Number" >
+                                </fieldset>
+                            </div>
+                            <input type="email" id="email" name="userEmail" placeholder="Email" >
+                            <input type="text" id="sub" name="userSubject" placeholder="Subject">
+                            <textarea type="text" id="msg" name="userMessage" placeholder="Your Message"></textarea>
+                            <input type="submit" name="send" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+                <!-- end contact ########################################### -->
+            </div>
+        </section>
+        <!--  end section #################################### -->
+        <hr class="text-secondary mt-5">
+
+        <!-- start footer ####################### -->
+        <footer>
+            <div class="container">
+                <div class="box">
+                    <img src="images/personall.jpg" alt="">
+                    <h2>Ebrahem Fikry</h2>
+                </div>
+                <div class="end">
+                    &copy; 2022. All rights reserved by Ebrahem fikry
+                </div>
+            </div>
+        </footer> 
+        <!-- end about #################################### -->
+    </main>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/btnTop.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/scroller.js"></script>
+</body>
+</html>
